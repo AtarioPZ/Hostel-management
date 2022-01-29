@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F32B3849-D6BF-4DE0-A9BF-42C4EF0585F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Hostel_management.My.MyApplication</StartupObject>
+    <RootNamespace>Hostel_management</RootNamespace>
+    <AssemblyName>Hostel management</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Hostel Management</ProductName>
+    <PublisherName>V and K</PublisherName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Hostel management.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Hostel management.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\vitoeee.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FontAwesome.Sharp, Version=5.15.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.5.15.3\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.1.9, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
+      <HintPath>packages\Guna.UI2.WinForms.2.0.1.9\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add.Designer.vb">
+      <DependentUpon>add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.vb">
+      <DependentUpon>admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.vb">
+      <DependentUpon>dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSetAllTables.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetAllTables.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="employee.Designer.vb">
+      <DependentUpon>employee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="employee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hostel_DBDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hostel_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hostel_DBDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hostel_DBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Hostel_Latest_DATASET.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Hostel_Latest_DATASET.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LatestDS.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LatestDS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manage.Designer.vb">
+      <DependentUpon>manage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageemp.Designer.vb">
+      <DependentUpon>manageemp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manageemp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageresident.Designer.vb">
+      <DependentUpon>manageresident.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manageresident.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageroom.Designer.vb">
+      <DependentUpon>manageroom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="manageroom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="payment.Designer.vb">
+      <DependentUpon>payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="records.Designer.vb">
+      <DependentUpon>records.vb</DependentUpon>
+    </Compile>
+    <Compile Include="records.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="room.Designer.vb">
+      <DependentUpon>room.vb</DependentUpon>
+    </Compile>
+    <Compile Include="room.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="student.Designer.vb">
+      <DependentUpon>student.vb</DependentUpon>
+    </Compile>
+    <Compile Include="student.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="add.resx">
+      <DependentUpon>add.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee.resx">
+      <DependentUpon>employee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manage.resx">
+      <DependentUpon>manage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageemp.resx">
+      <DependentUpon>manageemp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageresident.resx">
+      <DependentUpon>manageresident.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageroom.resx">
+      <DependentUpon>manageroom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payment.resx">
+      <DependentUpon>payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="records.resx">
+      <DependentUpon>records.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="room.resx">
+      <DependentUpon>room.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student.resx">
+      <DependentUpon>student.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DataSetAllTables.xsc">
+      <DependentUpon>DataSetAllTables.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetAllTables.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetAllTables.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetAllTables.xss">
+      <DependentUpon>DataSetAllTables.xsd</DependentUpon>
+    </None>
+    <None Include="Hostel_DBDataSet.xsc">
+      <DependentUpon>Hostel_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Hostel_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hostel_DBDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hostel_DBDataSet.xss">
+      <DependentUpon>Hostel_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Hostel_DBDataSet1.xsc">
+      <DependentUpon>Hostel_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Hostel_DBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hostel_DBDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hostel_DBDataSet1.xss">
+      <DependentUpon>Hostel_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Hostel_Latest_DATASET.xsc">
+      <DependentUpon>Hostel_Latest_DATASET.xsd</DependentUpon>
+    </None>
+    <None Include="Hostel_Latest_DATASET.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Hostel_Latest_DATASET.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Hostel_Latest_DATASET.xss">
+      <DependentUpon>Hostel_Latest_DATASET.xsd</DependentUpon>
+    </None>
+    <None Include="LatestDS.xsc">
+      <DependentUpon>LatestDS.xsd</DependentUpon>
+    </None>
+    <None Include="LatestDS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LatestDS.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="LatestDS.xss">
+      <DependentUpon>LatestDS.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Hostel_DB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Hostel_DB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Hostel_DB.mdf</DependentUpon>
+    </Content>
+    <Content Include="LOGOhostel logo.ico" />
+    <None Include="Resources\vitoeee.ico" />
+    <None Include="Resources\hms.ico" />
+    <None Include="Resources\WhatsApp Image 2021-09-17 at 8.38.20 PM.jpeg" />
+    <None Include="Resources\LOGOhostel logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
